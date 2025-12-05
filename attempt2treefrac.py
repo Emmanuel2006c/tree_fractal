@@ -18,9 +18,9 @@ def tree(origin, branch, angle, scale, rec_factor):
 
 origin = 0 + 0j
 first_end = 0 + 0.7j
-angle = math.pi / 4.123234
+angle = math.pi / 4.123234334234
 scale = 0.7
-recursion_factor = 11
+recursion_factor = 13
 
 tree(origin, first_end, angle, scale, recursion_factor)
 
