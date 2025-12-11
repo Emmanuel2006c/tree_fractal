@@ -1,12 +1,13 @@
 import turtle
 import random
 import time
+from PIL import Image
 Width,Height = 1920,1080
 screen = turtle.Screen()
 screen.setup(Width,Height)
 screen.screensize(3*Width, 3*Height)
 screen.delay(0)
-screen.bgcolor('lightblue')
+screen.bgcolor('violet')
 turtle.pensize(2)
 turtle.pencolor('black')
 turtle.tracer(1000,0)
@@ -42,5 +43,7 @@ turtle.pendown()
 turtle.left(90)
 branch(150, 0.8, 25, 10)
 
+img = Image.open("treefrac.eps")
+img.save("treefrac.pdf", "PDF")
 turtle.tracer()
 turtle.Screen().exitonclick()
